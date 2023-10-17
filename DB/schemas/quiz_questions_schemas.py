@@ -34,6 +34,10 @@ class QuizQuestionsUpdateSchema(BaseModel):
     filters: Optional[Dict] = None
 
 
+class QuizQuestionsPostRequest(BaseModel):
+    questions_num: int
+
+
 
 class QuizQuestionsPostResponse(BaseModel):
     response_by_db: int | bool
