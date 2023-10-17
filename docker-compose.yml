@@ -1,0 +1,29 @@
+version: '3'
+services:
+  your-app:
+    build:
+      context: .
+    environment:
+      POSTGRESQL_HOST: db
+      POSTGRESQL_USER: postgres
+      POSTGRESQL_PASSWORD: 1290l
+      POSTGRESQL_DB_NAME: postgres
+      POSTGRESQL_PORT: 5432
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1290l
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres-data:

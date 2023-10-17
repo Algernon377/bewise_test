@@ -1,0 +1,70 @@
+2023-10-16 22:48:45,745 - ERROR - Функция add_many в слое service. Ошибка получения данных 
+'list' object has no attribute 'list_obj'
+
+2023-10-17 10:14:51,442 - ERROR - Функция add_one в слое service. Ошибка получения данных 
+'tuple' object has no attribute 'model_dump'
+
+2023-10-17 10:16:48,935 - ERROR - Функция add_one в слое service. Ошибка получения данных 
+'tuple' object has no attribute 'model_dump'
+
+2023-10-17 10:17:55,288 - ERROR - Функция add_one в слое service. Ошибка получения данных 
+'tuple' object has no attribute 'model_dump'
+
+2023-10-17 10:18:57,714 - ERROR - Функция add_one в слое service. Ошибка получения данных 
+'tuple' object has no attribute 'model_dump'
+
+2023-10-17 10:20:13,699 - ERROR - Функция add_many в слое repository. Ошибка добавления данных в БД 
+Class 'DB.schemas.quiz_questions_schemas.QuizQuestionsAddSchema' is not mapped
+
+2023-10-17 11:56:45,871 - ERROR - Функция find_many в слое repository. Ошибка получения данных из БД или применении фильтров 
+Task <Task pending name='Task-12' coro=<RequestResponseCycle.run_asgi() running at C:\Users\user\Desktop\work_directory_win_solutions\bewise_test\lib\site-packages\uvicorn\protocols\http\httptools_impl.py:426> cb=[set.discard()]> got Future <Future pending cb=[Protocol._on_waiter_completed()]> attached to a different loop
+
+2023-10-17 11:56:45,877 - ERROR - Функция find_all в слое repository. Ошибка получения данных из БД или преобразовании из 
+(sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: SELECT quiz_questions.question_id, quiz_questions.question, quiz_questions.answer, quiz_questions.question_creation_date, quiz_questions.recipient_ip, quiz_questions.id 
+FROM quiz_questions]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+
+2023-10-17 11:56:45,879 - ERROR - Ошибка в работе функции request_questions_with_answers 
+'bool' object is not iterable
+
+2023-10-17 11:56:51,453 - ERROR - Функция find_many в слое repository. Ошибка получения данных из БД или применении фильтров 
+(sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: SELECT quiz_questions.question_id, quiz_questions.question, quiz_questions.answer, quiz_questions.question_creation_date, quiz_questions.recipient_ip, quiz_questions.id 
+FROM quiz_questions 
+WHERE quiz_questions.recipient_ip IS NULL]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+
+2023-10-17 11:56:51,455 - ERROR - Функция find_all в слое repository. Ошибка получения данных из БД или преобразовании из 
+(sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: SELECT quiz_questions.question_id, quiz_questions.question, quiz_questions.answer, quiz_questions.question_creation_date, quiz_questions.recipient_ip, quiz_questions.id 
+FROM quiz_questions]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+
+2023-10-17 11:56:51,456 - ERROR - Ошибка в работе функции request_questions_with_answers 
+'bool' object is not iterable
+
+2023-10-17 12:03:33,814 - ERROR - Функция find_many в слое repository. Ошибка получения данных из БД или применении фильтров 
+'NoneType' object has no attribute 'send'
+
+2023-10-17 12:03:33,817 - ERROR - Функция find_all в слое repository. Ошибка получения данных из БД или преобразовании из 
+(sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: SELECT quiz_questions.question_id, quiz_questions.question, quiz_questions.answer, quiz_questions.question_creation_date, quiz_questions.recipient_ip, quiz_questions.id 
+FROM quiz_questions]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+
+2023-10-17 12:03:33,819 - ERROR - Ошибка в работе функции request_questions_with_answers 
+'bool' object is not iterable
+
+2023-10-17 12:12:55,610 - ERROR - Функция find_many в слое repository. Ошибка получения данных из БД или применении фильтров 
+'NoneType' object has no attribute 'send'
+
+2023-10-17 12:12:55,613 - ERROR - Функция find_all в слое repository. Ошибка получения данных из БД или преобразовании из 
+(sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: SELECT quiz_questions.question_id, quiz_questions.question, quiz_questions.answer, quiz_questions.question_creation_date, quiz_questions.recipient_ip, quiz_questions.id 
+FROM quiz_questions]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+
+2023-10-17 12:12:55,615 - ERROR - Ошибка в работе функции request_questions_with_answers 
+'bool' object is not iterable
+
