@@ -70,6 +70,7 @@ async def parsing_and_transformation_questions(raw_questions: list[dict]) -> lis
         new_row['question_id'] = row.get('id')
         new_row['question'] = row.get('question')
         new_row['answer'] = row.get('answer')
+        new_row['question_creation_date'] = row.get('created_at')
         questions.append(QuizQuestionsAddSchema(**new_row))
     return questions
 

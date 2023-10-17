@@ -23,6 +23,7 @@ class QuizQuestionsAddSchema(BaseModel):
     question_id: int
     question: str
     answer: str
+    question_creation_date: Optional[datetime.datetime] = None
     recipient_ip: Optional[str] = None
 
 class QuizQuestionsAddManySchema(BaseModel):
