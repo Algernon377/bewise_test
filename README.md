@@ -6,3 +6,9 @@
 - Автоматическая документация по стандарту OpenAPI Specification будет доступна по url `http://localhost/docs#/`   
 - Сам запрос делается на url `http://localhost/quiz`
 - Тип запроса только POST с телом запроса `{"questions_num": integer}`, Где integer - любое целое число больше 0
+- Данные БД
+-- HOST: db
+-- USER: postgres
+-- PASSWORD: 1290l
+-- DB_NAME: postgres
+-- PORT: 5432
