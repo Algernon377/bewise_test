@@ -4,11 +4,13 @@
 - Для запуска данного приложения достаточно скачать репозиторий и, находясь в директории с `docker-compose.yml` файлом, запустить его командой в терминале `docker-compose up -d`.
 - Для остановки работы выполнить команду `docker-compose down`     
 - Автоматическая документация по стандарту OpenAPI Specification будет доступна по url `http://localhost/docs#/`   
-- Сам запрос делается на url `http://localhost/quiz`
+- Сам запрос делается на url `http://localhost/quiz` порт: 80
 - Тип запроса только POST с телом запроса `{"questions_num": integer}`, Где integer - любое целое число больше 0
 - Данные БД  
 -- HOST: db  
 -- USER: postgres  
 -- PASSWORD: 1290l  
 -- DB_NAME: postgres  
--- PORT: 5432  
+-- PORT: 5432
+- База Данных развернута так же на локальной машине с портом 5432
+- Имя создаваемой таблицы quiz_questions
